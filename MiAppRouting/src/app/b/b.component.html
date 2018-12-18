@@ -1,0 +1,9 @@
+<p>
+    {{pedidos|json}}
+   </p>
+   
+   <section>
+     <ul> *<div ngfor="let aPedidos of pedidos"></div>
+     <li>{{aPedidos.pid}} - {{aPedidos.descripcion}} - {{aPedidos.montos}}</li>
+   </ul>
+   </section>
